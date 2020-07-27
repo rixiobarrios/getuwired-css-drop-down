@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Could not find Brando Grotesque font, used Cabin instead -->
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>CSS Dropdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+/* Background image provided */
+        body {
+            background-image: url(https://i.imgur.com/h2YS4W7.jpg);
+            background-size: 100rem;
+            background-repeat: no-repeat;
+            text-transform: uppercase;
+        }
+
+/* Navigation bar */
+        nav {
+            width: 100%;
+            height: 45px;
+            background-color: white;
+            padding: 25px 0px 25px 0px;
+        }
+
+/* Navigation hover animation bottom line */
+        nav:hover {
+            border-bottom: 6px solid #23DEBC;
+        }
+
+/* Tittle for website in navigation bar */
+        h1 {
+            font-family: 'Cabin', sans-serif;
+            font-weight: 700 !important;
+            letter-spacing: 5px;
+            color: black;
+            font-size: 30px;
+            line-height: 50px;
+            float: left;
+            padding: 1px 0px 0px 120px;
+        }
+        
+/* Top links in the navigation bar */
+        .links {
+            padding: 0px 85px;
+        }
+/* Top links float right */        
+        nav ul {
+            float: right;
+        }
+
+/* Top links horizontal in-line position */
+        nav ul li {
+            float: left;
+            list-style: none;
+            position: relative;
+            margin: 0px 15px;
+        }
+
+/* Top links hover animation with dropdown */
+        nav ul li:hover {
+            background-color: #23DEBC;
+            border-radius: 3px 3px 0px 0px;
+        }
+
+        nav ul li ul li:hover {
+            background-color: transparent;
+
+        }
+
+/* Navigation links text */
+        nav ul li a {
+            display: block;
+            color: black;
+            font-family: 'Cabin', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            letter-spacing: 3px;
+            padding: 30px 15px 23px 15px;
+        }
+
+/* Dropdown links hover */
+        nav ul li:hover ul {
+            display: block;
+            background-color: #23DEBC;
+        }
+
+/* Hide display and set position dropdown links */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+        }
+/* Dropdown links widths */
+        nav ul li ul li {
+            width: 250px;
+        }
+/* Dropdown links text */
+        nav ul li ul li a {
+            font-family: 'Cabin', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            color: white;
+            text-shadow: gray 1px 1px 1px;
+            padding: 17px 0px;
+        }
+
+/* Dropdown dark hover effect for links */
+        nav ul li ul li a:hover {
+            background-color: #17A38A;
+            border-radius: 0px;
+            margin: 1px 15px;
+        }
+
+        .about a:hover {
+            background-color: #17A38A;
+            margin: 0px -15px;
+        }
+
+        .locations li {
+            padding: 0 auto;
+            margin: 0px -15px -1px -15px;
+        }
+        
+        .products li {
+            padding: 0 auto;
+            margin: 0px -15px -1px -15px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        </a>
+        <h1>Getuwired</h1>
+        <ul class="links">
+            <li><a href="#">About</a>
+                <ul class="about">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Commitment to you</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Locations</a>
+                <ul class="locations">
+                    <li><a href="#">Austin, TX</a></li>
+                    <li><a href="#">Atlanta, GA</a></li>
+                    <li><a href="#">Seattle, WA</a></li>
+                    <li><a href="#">Portland, OR</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Products</a>
+                <ul class="products">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Top Rated</a></li>
+                    <li><a href="#">His</a></li>
+                    <li><a href="#">Hers</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Spring Catalog</a></li>
+                    <li><a href="#">The Essentials</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
